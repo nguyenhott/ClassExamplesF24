@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/Generics/Generics.iml" filepath="$PROJECT_DIR$/Generics/Generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/Inheritance/Inheritance.iml" filepath="$PROJECT_DIR$/Inheritance/Inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JUnitCLIExample/JUnitCLIExample.iml" filepath="$PROJECT_DIR$/JUnitCLIExample/JUnitCLIExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUnitExample/JUnitExample.iml" filepath="$PROJECT_DIR$/JUnitExample/JUnitExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListInterface/ListInterface.iml" filepath="$PROJECT_DIR$/ListInterface/ListInterface.iml" />
     </modules>
