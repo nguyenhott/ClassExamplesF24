@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/JUnitCLIExample/JUnitCLIExample.iml" filepath="$PROJECT_DIR$/JUnitCLIExample/JUnitCLIExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUnitExample/JUnitExample.iml" filepath="$PROJECT_DIR$/JUnitExample/JUnitExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListInterface/ListInterface.iml" filepath="$PROJECT_DIR$/ListInterface/ListInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecursiveExample/RecursiveExample.iml" filepath="$PROJECT_DIR$/RecursiveExample/RecursiveExample.iml" />
     </modules>
   </component>
 </project>
