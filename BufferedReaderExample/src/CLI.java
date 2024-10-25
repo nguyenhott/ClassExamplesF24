@@ -27,6 +27,10 @@ public class CLI {
 
     public void readDatabase(BufferedReader reader) throws IOException {
         String line;
+        if(!reader.ready()){
+            System.out.println("provide input");
+            return;
+        }
         for(line = reader.readLine(); line != null; line = reader.readLine())
         {
             if (line.length() == 0)
