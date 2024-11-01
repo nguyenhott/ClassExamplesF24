@@ -1,39 +1,42 @@
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class WordScramble {
     /**
      * @param solution current word
      * @param remaining remaining letters
      */
 
-    public static void permutation(String solution, String remaining){
-        if(remaining.length() == 0){
-            System.out.println(solution);
+    public static void permutation(StringBuilder solution, StringBuilder remaining){
+        // TO DO
+        if(remaining.length()==0){
+            System.out.println(solution.toString());
         }
-
         else{
-            for(int i =0; i < remaining.length(); i++){
-
+            for(int i = 0; i < remaining.length(); i++){
+                //choose
                 char ch = remaining.charAt(i);
+                solution.append(ch);
+                remaining.deleteCharAt(i);
 
-                //create new strings to pass to the recursive method
-                String  nextRemaining = remaining.substring(0, i) + remaining.substring(i+1);
-                String nextSolution = solution + ch;
-
-                permutation(nextSolution, nextRemaining);
+                //explore
+                permutation(solution, remaining);
+                //unchoose
+                solution.deleteCharAt(solution.length()-1);
+                remaining.insert(i, ch);
 
             }
+
         }
+
     }
 
     public static void main(String [] args){
 
-        if(args.length != 1){
-            System.out.println("Usage: java Word yourword");
-            return;
-        }
+        StringBuilder word = new StringBuilder("DOG");
 
-        String word = new String(args[0]);
-
-        String empty = new String("");
+        StringBuilder empty = new StringBuilder("");
 
         permutation(empty, word);
 

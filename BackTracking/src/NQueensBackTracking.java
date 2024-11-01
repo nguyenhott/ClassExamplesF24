@@ -7,8 +7,31 @@ public class NQueensBackTracking {
         NQueens(board, N);
     }
 
-    public static void NQueens(int[][] chessboard, int queens){
+    public static boolean NQueens(int[][] chessboard, int queens){
         // TO DO
+        if(queens == 0){
+            print(chessboard); //base case
+            return true;
+        }
+        else{
+            int currentRow = chessboard.length - queens;
+            for(int i = 0; i < chessboard.length; i++){
+                if(isSafe(chessboard,currentRow,i)){
+                    // make a choice
+                    chessboard[currentRow][i] = 1;
+                    //visualize(chessboard);
+                    //explore
+                    boolean result = NQueens(chessboard, queens - 1);
+                    if(result) return true;
+                    //unmake a choice
+                    chessboard[currentRow][i] = 0;
+                    //visualize(chessboard);
+                }
+
+            }
+
+        }
+        return false;
     }
 
     public static boolean isSafe(int[][] chessboard, int row, int col){
