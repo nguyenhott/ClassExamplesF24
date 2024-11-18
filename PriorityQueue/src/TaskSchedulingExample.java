@@ -11,7 +11,7 @@ public class TaskSchedulingExample {
         taskQueue.add(new Task("Implement feature", 1));
 
         // Print the PriorityQueue
-        System.out.println("PriorityQueue (Custom Task Ordering): " + taskQueue);
+        System.out.println("PriorityQueue: " + taskQueue);
 
         // Remove tasks in priority order
         System.out.println("Processing tasks in priority order:");
