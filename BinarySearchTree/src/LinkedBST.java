@@ -132,6 +132,7 @@ public class LinkedBST<E extends Comparable<E>> extends AbstractBST<E> {
             //root call delete
             if(target.compareTo(value) == 0)
             {
+                // found the target, actually remove the target from the BST
                 return this.remove(target);
             }
             if(target.compareTo(value) < 0){
@@ -187,6 +188,7 @@ public class LinkedBST<E extends Comparable<E>> extends AbstractBST<E> {
             root = root.delete(found);
         return found;
     }
+
 
     public void preorderPrint()
     {
